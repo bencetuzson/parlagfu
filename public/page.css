@@ -1,0 +1,18 @@
+.page {
+    display: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*text-align: justify;*/
+}
+
+.activePage {
+    display: block;
+}
+
+.info {
+    text-align: justify;
+}
+
+.link {
+    margin-top: -10px;
+    text-align: right;
+}

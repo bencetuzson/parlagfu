@@ -1,0 +1,10 @@
+body, head {
+    color: #000000;
+    background-image: url("rajz.png");
+    background-color: #ffffff;
+}
+
+weblink {
+    font-family: monospace;
+    font-style: italic;
+}
