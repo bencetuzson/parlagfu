@@ -9,8 +9,8 @@ function setupPage() {
     } else if (window.location.hash != "") {
         if (window.location.hash == "#Error") {
             activatePage(hashToID("Page"));
-            errorTitle;
-            errorMessage;
+            errorTitle();
+            errorMessage();
         } else {
             hashPageChange("Page", "Button");
             changeTitle("Button");
@@ -31,9 +31,9 @@ function setupPage() {
         console.log(window.location.hash);
         if (document.getElementById(hashToID("Page")) === null && window.location.hash != ""){
             window.location.replace("#Error"); //Eredeti törölve az előzményekből
-            errorMessage;
+            errorMessage();
         } else if (window.location.hash == "#Error") {
-            error;
+            error();
         /*} else if(window.location.hash == "#Error") {
             error();*/
         }else{
