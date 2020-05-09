@@ -53,7 +53,6 @@ function hashChange(page, nav) {
  * Hibakezelés, ha érvénytelen a hash. Kiírja konzolba a hibaüzenetet ("Error! Hash not found!"), aktiválja az ErrorPage-et és átírja az oldal címét "A parlagfű - Error!"-ra
  */
 function error() {
-    window.location.replace("#Error"); //Eredeti törölve az előzményekből
     console.error("Error! Hash not found!");
     //location.hash = "Error";
     activatePage("ErrorPage");

@@ -28,7 +28,9 @@ function setupPage() {
     });
     window.addEventListener("hashchange", () => {
         console.log(window.location.hash);
-        if (document.getElementById(hashToID("Page")) === null && window.location.hash != "" || window.location.hash == "#Error") {
+        if (document.getElementById(hashToID("Page")) === null && window.location.hash != ""){
+            window.location.replace("#Error"); //Eredeti törölve az előzményekből
+        } else if (window.location.hash == "#Error") {
             error();
         /*} else if(window.location.hash == "#Error") {
             error();*/
