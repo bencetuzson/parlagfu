@@ -50,17 +50,23 @@ function hashChange(page, nav) {
     activateNavItem(nav);
 }
 /**
- * Hibakezelés, ha érvénytelen a hash. Kiírja konzolba a hibaüzenetet ("Error! Hash not found!"), aktiválja az ErrorPage-et és átírja az oldal címét "A parlagfű - Error!"-ra
+ * Hibakezelés, ha érvénytelen a hash. Aktiválja az ErrorPage-et és átírja az oldal címét "A parlagfű - Error!"-ra
  */
 function error() {
-    console.error("Error! Hash not found!");
     //location.hash = "Error";
     activatePage("ErrorPage");
-    errorTitle();
+    errorTitle;
     document.querySelectorAll(".navItem").forEach(item => {
         item.classList.remove("activeNavItem");
     });
 }
+/**
+ * Kiírja konzolba a hibaüzenetet ("Error! Hash not found!")
+ */
+function errorMessage() {
+    console.error("Error! Hash not found!");
+}
+
 /**
  * Leszedi a hash-t és a megadott típust adja hozzá, így visszaadja ID-vá alakítva
  * @param {String}  type ID típusa

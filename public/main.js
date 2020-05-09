@@ -5,11 +5,12 @@ function setupPage() {
     //console.log(window.location.hash);
     if (document.getElementById(hashToID("Page")) === null && window.location.hash != "") {
         //console.log(document.getElementById(window.location.hash.replace("#", "").concat("Page")));
-        error();
+        error;
     } else if (window.location.hash != "") {
         if (window.location.hash == "#Error") {
             activatePage(hashToID("Page"));
-            errorTitle();
+            errorTitle;
+            errorMessage;
         } else {
             hashPageChange("Page", "Button");
             changeTitle("Button");
@@ -30,8 +31,9 @@ function setupPage() {
         console.log(window.location.hash);
         if (document.getElementById(hashToID("Page")) === null && window.location.hash != ""){
             window.location.replace("#Error"); //Eredeti törölve az előzményekből
+            errorMessage;
         } else if (window.location.hash == "#Error") {
-            error();
+            error;
         /*} else if(window.location.hash == "#Error") {
             error();*/
         }else{
