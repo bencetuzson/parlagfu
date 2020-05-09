@@ -55,7 +55,7 @@ function hashChange(page, nav) {
 function error() {
     //location.hash = "Error";
     activatePage("ErrorPage");
-    errorTitle();
+    errorTitle;
     document.querySelectorAll(".navItem").forEach(item => {
         item.classList.remove("activeNavItem");
     });
